@@ -1,0 +1,259 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css"/>
+        <title> Rental Zone</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="rental cal service">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Deepak kumar">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-expand-md navbar-dark bg-secondary fixed-top">
+                <div class="container-fluid">
+                    <span class="brandname">
+                        <h4>The Rental Zone</h4>
+                        <p>~rent your dream</p>
+                    </span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"      data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon-sm"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Community</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Career</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">More</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Setting</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ">AboutUs</a>
+                            </li>
+                        </ul>
+                      
+                    </div>
+                    <div>
+                        <Span class="cart">
+                            <i class="bi bi-cart-fill"></i>
+                            <a href="#" class="navtext">Cart</a>
+                        </Span>
+                        <span class="signup">
+                            <i class="bi bi-person-fill"></i>
+                            <a href="#" class="navtext"> Signup </a>
+                        </span>
+                        <span class="login">
+                            <i class="bi bi-box-arrow-in-right"></i>
+                            <a href="#" class="navtext"> Login </a>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+            <div class="search">
+                
+                <select name="types of car" id="cartypes">
+                    <option value="type of car"> SELECT YOUR CHOICE (Car Types)</option>
+                    <option value="sedan">sedan</option>
+                    <option value="hatchback">hatchback</option>
+                    <option value="suv">suv</option>
+                    <option value="crossover">crossover</option>
+                    <option value="pickup truck">pickuptruck</option>
+                </select>
+                <select name="location" id="location">
+                    <option value="select your location">SELECT YOUR LOCATION (City)</option>
+                    <option value="New Delhi">New Delhi</option>
+                    <option value="Patna">Patna</option>
+                    <option value="Ranchi">Ranchi</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Bengluru">Bengluru</option>
+                </select>
+                <select class="date">
+                    <option value="date">---SELECT BOOKING DATE---</option>
+                </select>
+                <select class="startingpoint">
+                    <option value="starting point">----SELECT STARTING POINT----</option>
+                </select>
+                <select class="Destination">
+                    <option value="Destination">----SELECT DESTINATION-----</option>
+                </select>
+            </div>
+            <span class="quicksearchtxt">
+                <h5>Based On Latest Demand :</h5>
+            </span>
+            <div class="quicksearch">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/thar.jpg" class="d-block " alt="thar">
+                            <div class="carousel-caption d-none d-md-block">
+                                <span class="nameis">THAR</span>
+            
+                                <div>
+                                    <button class="btn btn-secondary">Specificaation</button>
+                                    <button class="btn btn-Danger">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/scorpioN.jpg" class="d-block" alt="scorpio">
+                            <div class="carousel-caption d-none d-md-block">
+                                <span class="nameis">SCORPI0</span>
+            
+                                <div>
+                                    <button class="btn btn-secondary">Specificaation</button>
+                                    <button class="btn btn-Danger">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/fortuner.jpg" class="d-block" alt="fortuner">
+                            <div class="carousel-caption d-none d-md-block">
+                                <span class="nameis">FORTUNER</span>
+            
+                                <div>
+                                    <button class="btn btn-secondary">Specificaation</button>
+                                    <button class="btn btn-Danger">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- <div class="coloum">
+                    <Span><img src="img/thar.jpg" alt="thar" class="car" />
+                        <a class="carname" href="https://auto.mahindra.com/suv/thar" alt="thar">THAR</a>
+                    </Span>
+                </div>
+                <div class="coloum">
+                    <Span> <img src="img/scorpio.jpg" alt="scorpio" class="car" />
+                        <a class="carname" href="https://www.mahindrascorpio.com/" alt="scorpio">SCORPIO</a>
+                    </Span>
+                </div>
+                <div class="coloum">
+                    <Span><img src="img/fortuner.jpg" alt="fortuner" class="car" />
+                        <a class="carname" href="https://www.toyotabharat.com/" alt="">FORTUNER</a>
+                    </Span>
+                </div>
+                <div class="coloum">
+                    <Span> <img src="img/audi A8.jpg" alt="audi" class="car" />
+                        <a class="carname" href="https://www.audigurugram.in/" alt="audi">AUDI A8</a>
+                    </Span>
+                </div>
+                <div class="coloum">
+                    <Span> <img src="img/bmw  x5.jpg" alt="BMW" class="car" />
+                        <a class="carname" href="https://www.bmw.in/" alt="">BMW X5</a>
+                    </Span>
+                </div>  <div class="coloum">
+                    <Span> <img src="img/bmw  x5.jpg" alt="BMW" class="car" />
+                        <a class="carname" href="https://www.bmw.in/" alt="">BMW X5</a>
+                    </Span>
+                </div>
+                <div class="coloum">
+                    <Span> <img src="img/bmw  x5.jpg" alt="BMW" class="car" />
+                        <a class="carname" href="https://www.bmw.in/" alt="">BMW X5</a>
+                    </Span>
+                </div>
+                <div class="coloum">
+                    <Span> <img src="img/bmw  x5.jpg" alt="BMW" class="car" />
+                        <a class="carname" href="https://www.bmw.in/" alt="">BMW X5</a>
+                    </Span>
+                </div>
+                <div class="coloum">
+                    <Span> <img src="img/bmw  x5.jpg" alt="BMW" class="car" />
+                        <a class="carname" href="https://www.bmw.in/" alt="">BMW X5</a>
+                    </Span>
+                </div>
+                <div class="coloum">
+                    <Span> <img src="img/bmw  x5.jpg" alt="BMW" class="car" />
+                        <a class="carname" href="https://www.bmw.in/" alt="">BMW X5</a>
+                    </Span>
+                </div>
+                <div class="coloum">
+                    <Span> <img src="img/bmw  x5.jpg" alt="BMW" class="car" />
+                        <a class="carname" href="https://www.bmw.in/" alt="">BMW X5</a>
+                    </Span>
+                </div>
+                <div class="coloum">
+                    <Span> <img src="img/bmw  x5.jpg" alt="BMW" class="car" />
+                        <a class="carname" href="https://www.bmw.in/" alt="">BMW X5</a>
+                    </Span>
+                </div>
+                <div class="coloum">
+                    <Span> <img src="img/bmw  x5.jpg" alt="BMW" class="car" />
+                        <a class="carname" href="https://www.bmw.in/" alt="">BMW X5</a>
+                    </Span>
+                </div>
+                <div class="coloum">
+                    <Span> <img src="img/bmw  x5.jpg" alt="BMW" class="car" />
+                        <a class="carname" href="https://www.bmw.in/" alt="">BMW X5</a>
+                    </Span>
+                </div> -->
+            </div>
+        
+        <footer class="footer">
+            <div class="container fluid">
+               
+                <p class="contact"> contact us:</p>
+                <a href="https://www.instagram.com/deepakrajsingh01/" target="blank" instagram>
+                    <img class="social" src="img/Instagram-Icon.png" alt="instagram" />
+                </a>
+                <a href="https://www.facebook.com/deepakraj.singh.503/" target="blank" facebook>
+                    <img class="social" src="img/Facebook icon.png" alt="facebook"  />
+                </a>
+                <a href="https://www.youtube.com/channel/UCJ_UjWGRias5ZNkNPr_dxPQ" target="blank" youtube>
+                    <img class="social" src="img/youtube.png" alt="youtube" />
+                </a>
+                <a href="https://github.com/Deepak9852" target="blank" github>
+                    <img class="social" src="img/GitHub.png" alt="github" />
+                <a href="https://gmail.com/deepakraj214125@gmai.com" target="blank" gmail>
+                    <img class="social" src="img/gmail.jpg" alt="gmail" />
+                </a>
+                <p class="copyright">&copy; deepak kumar</p>
+            
+            </div>
+        </footer>
+        <div class="popup" id="coupon">
+            <img src="img/cab-coupons.jpg" alt="">
+            <button onclick="closeCoupon()" action="popup">&times;</button>
+        </div>
+        <script>
+            window.onload(loadCoupon)
+        </script>
+    </body>
+</html>
