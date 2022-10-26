@@ -46,14 +46,15 @@
                                 <a class="nav-link" href="#">Setting</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link ">AboutUs</a>
+                                <a class="nav-link" href="#">AboutUs</a>
                             </li>
                         </ul>
                     </div>
                     <div class="icons">
+                        <p id="out" ></p>
+                        <p id="weatherout"></p>
+                        <button onclick="geolocation()"> <i class="bi bi-geo-alt-fill" id="myLocation"></i></button>
                         <button onclick="myFunction()"> <i class="bi bi-toggle-on" id="mode"></i></button>
-                       
-                        
                         <Span class="cart">
                             <i class="bi bi-cart-fill"></i>
                             <a href="#" class="navtext">Cart</a>
@@ -252,7 +253,7 @@
             <button onclick="closeCoupon()" action="popup">&times;</button>
         </div>
         <script>
-            window.onload(loadCoupon)
+            window.onload(loadCoupon);
         </script>
     </body>
 </html>

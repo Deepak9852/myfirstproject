@@ -29,8 +29,8 @@ body{
 padding-bottom: 70px;
 }
 .header button {
-    color: rgb(218, 63, 63);
-    border: solid 2px rgb(218, 63, 63);
+    color: rgb(32, 23, 207);
+    border: solid 2px rgb(86, 63, 218);
 }
 .navbar{
     color: var(--secondary-color);
@@ -75,7 +75,7 @@ padding-bottom: 70px;
     margin:0 18%  0 2% ;
 } 
 .navbar-nav{
-    margin: 0 20% 0 0 ;
+    margin: 0 18% 0 0 ;
     line-height: 5px;
 }
 
@@ -91,25 +91,32 @@ padding-bottom: 70px;
     font-size: large;
     color: var(--secondary-color);
 }
-#mode{
-   padding-right: 20px;
-   text-decoration: none;
-   /* color: #0e0d0d; */
-}
+
 .icons button{
     border: none;
     color: var(--secondary-color);
     background-color: var(--prrimary-color);
     padding: 0;
 }
+
+#mode{
+    padding-right: 20px;
+    text-decoration: none;
+    /* color: #0e0d0d; */
+ }
+
+ #myLocation{
+    margin-right: 8px;
+ }
+ #weatherout{
+    font-weight: bold;
+ }
 .cart{
  } 
 .signup{
-    margin: 0 20px 0 20px;
-    /* color:#0e0d0d; */
+    margin: 0 18px 0 18px;
 }
 .login{
-    /* color:#0e0d0d; */
 }
 
 
